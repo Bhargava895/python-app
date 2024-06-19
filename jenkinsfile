@@ -9,13 +9,13 @@ pipeline {
         SONAR_LOGIN = 'sqa_9eeff9fd6fe6cc1ba506f3053f98af90e1236886'
         AWS_REGION = 'us-east-1'
         EC2_IP = '35.153.79.231'
-        SSH_KEY_PATH = '/path/to/your/private-key.pem'
+        SSH_KEY_PATH = 'ssh_key'
     }
 
     stages {
         stage('Checkout') {
             steps {
-                checkout scm
+                git branch: 'master', url: 'https://github.com/Bhargava895/python-app.git'
             }
         }
 
