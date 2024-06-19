@@ -21,8 +21,6 @@ pipeline {
 
         stage('Unit Testing') {
             steps {
-                sudo yum update -y
-                sudo yum install -y python3 git
                 sh 'python3 -m unittest discover'
             }
         }
