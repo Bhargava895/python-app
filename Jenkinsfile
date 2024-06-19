@@ -5,10 +5,10 @@ pipeline {
         // Environment variables
         ECR_REPO = '905418319927.dkr.ecr.us-east-1.amazonaws.com/gitlab-app' // Your AWS ECR repository URL
         IMAGE_NAME = 'latest'
-        SONAR_HOST_URL = 'http://35.153.79.231:9000/'
+        SONAR_HOST_URL = 'http://34.224.95.219:9000/'
         SONAR_LOGIN = 'sqa_9eeff9fd6fe6cc1ba506f3053f98af90e1236886'
         AWS_REGION = 'us-east-1'
-        EC2_IP = '35.153.79.231'
+        EC2_IP = '34.224.95.219'
         SSH_KEY_PATH = 'ssh_key'
     }
 
